@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>story</title>
+</head>
+<style>
+
+    .banner{
+
+	text-align: center;
+	position: fixed;
+	background-attachment: scroll;
+    background-color: black;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner-text{
+	padding:100px 0 50px 0;
+}
+.banner-heading{
+	font-family: 'Comic Sans', serif;
+	font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 30px;
+	color:orange;
+}
+.text-intro{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding-top:30px;
+}
+@media (max-width:500px)
+{
+
+.banner-text{
+	padding:150px 0 50px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+</style>
+
+<body>
+<div class="banner">
+    <div class="container">
+        <div class="banner-text">
+	 <div class="banner-heading">
+
+{{ rand }}
+
+
+<form action="/prediction" method = "post">
+        Where is <input name = "quer" type = "text" class="text">
+    <input type="submit">
+</form>
+     </div>
+        </div>
+</div>
+</div>
+</body>
+</html>

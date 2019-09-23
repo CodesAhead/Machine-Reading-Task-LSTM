@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BABI</title>
+</head>
+<style>
+
+.ba{
+     width: 280px;
+     height: 280px;
+}
+
+.banner{
+	background-image:url('/static/babii.jpg');
+	text-align: center;
+	height: 100%
+    color: #fff;
+
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+.banner-text{
+	padding:200px 0 150px 0;
+}
+.banner-heading{
+	font-family: 'Comic Sans', serif;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 8px;
+	color:brown;
+}
+.banner-sub-heading{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 35px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 8px;
+	color:black  ;
+}
+
+.btn-banner{
+	padding:5px 20px;
+	border-radius:50px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color:black;
+	text-transform:uppercase;
+}
+.text-intro{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding-top:30px;
+}
+@media (max-width:500px)
+{
+
+.banner-text{
+	padding:150px 0 150px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.banner-sub-heading{
+	font-size: 15px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 20px;
+}
+
+
+}
+
+</style>
+<body>
+
+<div class="banner">
+	 <div class="container">
+	 <div class="banner-text">
+	 <div class="banner-heading">
+	 <img class="ba" src="/static/StorAI.jpg">
+	 </div>
+	  <div class="banner-sub-heading">
+Find Your Story
+	 </div>
+<a href="{{url_for('story_page')}}">
+         <button type="button" class="btn btn-warning text-dark btn-banner"> Generate story </button>
+         </a>
+       </div>
+     </div>
+</div>
+</body>
+</html>
